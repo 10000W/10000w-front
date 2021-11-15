@@ -73,7 +73,8 @@
     flex-direction: column;
     position: relative;
     width: 102.4rem;
-    height: 72rem;
+    height: 100%;
+    max-height: 72rem;
     padding: 2rem;
     background-color: var(--background);
 
@@ -82,6 +83,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 999;
         width: 100%;
         height: 100%;
         background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, .25) 0), linear-gradient(90deg, rgba(255, 0, 0, .06), rgba(0, 255, 0, .02), rgba(0, 0, 255, .06));

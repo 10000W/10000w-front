@@ -25,6 +25,7 @@
 
             <a v-if="project.feature"
                :class="$style.feature"
+               class="link"
                :href="project.feature.link"
                target="_blank">
                 {{ project.feature.name }}
@@ -32,12 +33,14 @@
 
             <div :class="$style.bottom">
                 <a :href="project.link"
+                   class="link"
                    target="_blank">
                     Перейти на сайт
                 </a>
 
                 <a v-if="project.team"
                    :class="$style.team"
+                   class="link"
                    :href="project.team.link"
                    target="_blank">
                     {{ project.team.name }}
@@ -104,9 +107,18 @@
 .bottom {
     display: flex;
     justify-content: space-between;
+
+    @include mq(sm) {
+        display: block;
+    }
 }
 
 .team {
+    display: block;
     flex-shrink: 1;
+
+    @include mq(sm) {
+        margin-top: 1rem;
+    }
 }
 </style>

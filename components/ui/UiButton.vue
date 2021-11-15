@@ -69,6 +69,7 @@
     appearance: none;
     -webkit-appearance: none;
     font-size: 2rem;
+    outline: 0;
 
     &._small {
         font-size: 1.6rem;
@@ -96,7 +97,7 @@
     }
 
     &:focus-visible {
-        outline: 5px solid var(--primary-active);
+        box-shadow: 0 0 0 5px inset var(--secondary);
     }
 }
 </style>

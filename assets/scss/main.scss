@@ -51,12 +51,6 @@ p {
     margin-bottom: 1.2rem;
 }
 
-a {
-    font-size: 1.6rem;
-    color: var(--text);
-    font-style: normal;
-}
-
 strong {
     font-weight: 600;
 }
@@ -77,6 +71,21 @@ strong {
 
     @include mq(sm) {
         font-size: 1.8rem;
+    }
+}
+
+.link {
+    font-size: 1.6rem;
+    color: var(--text);
+    font-style: normal;
+
+    &:hover {
+        color: var(--primary-active);
+    }
+
+    &:focus, &:active {
+        color: var(--primary-active);
+        outline: none;
     }
 }
 

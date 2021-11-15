@@ -5,10 +5,11 @@
             Как со мной связаться
         </h1>
 
-        <address>
+        <address :class="$style.links">
             <a v-for="(link, index) in links"
                :key="index"
                :class="$style.link"
+               class="link"
                :href="link.href"
                :target="link.target">
                 {{ link.name }}
@@ -51,8 +52,14 @@
     //
 }
 
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .link {
-    display: block;
+    display: flex;
     margin-bottom: 1.6rem;
     font-size: 2.2rem;
 }

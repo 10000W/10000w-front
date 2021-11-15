@@ -24,7 +24,7 @@
         },
 
         async fetch() {
-            this.projects = await this.$axios.$get('projects.json');
+            this.projects = await this.$axios.$get('https://front.cat/projects.json');
         },
     };
 </script>

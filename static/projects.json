@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Береговой",
         "link": "https://beregovoy-kvartal.ru/",
-        "description": "Frontend разработка всего портала.",
+        "description": "Frontend разработка портала.",
         "team": {
             "name": "idaproject",
             "link": "https://idaproject.com"
@@ -51,7 +51,7 @@
         "id": 5,
         "name": "СКОР",
         "link": "https://scor.ru/",
-        "description": "Frontend разработка всего сайта.",
+        "description": "Frontend разработка сайта.",
         "team": {
             "name": "idaproject",
             "link": "https://idaproject.com"
