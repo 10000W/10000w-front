@@ -1,0 +1,102 @@
+<template>
+    <n-link v-if="to"
+            :class="[$style.UiButton, classes]"
+            :to="to"
+            @click.native="onClick"
+    >
+        <slot></slot>
+    </n-link>
+
+    <button v-else
+            :class="[$style.UiButton, classes]"
+            :type="type"
+            @click="onClick"
+    >
+        <slot></slot>
+    </button>
+</template>
+<script>
+    export default {
+        name: 'UiButton',
+
+        props: {
+            type: {
+                type: String,
+                default: 'button',
+            },
+
+            size: {
+                type: String,
+                default: '',
+            },
+
+            to: {
+                type: String,
+                default: '',
+            },
+        },
+
+        computed: {
+            classes() {
+                return [
+                    {[this.$style[`_${this.size}`]]: this.size},
+                ];
+            },
+        },
+
+        methods: {
+            onClick(e) {
+                const audio = new Audio(`./sounds/key${Math.random() < .5 ? '1' : '2'}.mp3`);
+                audio.volume = 0.2;
+                audio.play();
+                this.$emit('click', e);
+            },
+        },
+    };
+</script>
+<style lang="scss" module>
+.UiButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.2rem 2.4rem;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 2rem;
+
+    &._small {
+        font-size: 1.6rem;
+
+        @include mq(xs) {
+            padding: 1rem 1.8rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    &._large {
+        font-size: 2.8rem;
+    }
+
+    &:hover {
+        background-color: var(--primary);
+        border: 1px solid var(--primary);
+        color: var(--primary-active-text);
+    }
+
+    &:active {
+        background-color: var(--primary-active);
+        border: 1px solid var(--primary-active);
+        color: var(--primary-active-text);
+    }
+
+    &:focus-visible {
+        outline: 5px solid var(--primary-active);
+    }
+}
+</style>

@@ -1,0 +1,34 @@
+:root {
+    --primary: #0bcc12;
+    --primary-active: #0f9a00;
+    --secondary: #fc0;
+    --background: #000860;
+    --error: #cd1e04;
+    --text: #fff;
+    --primary-active-text: var(--text);
+}
+
+.theme--blood {
+    --background: #111;
+    --text: #cd1e04;
+    --primary: #cd1e04;
+    --primary-active: #cd1e04;
+    --primary-active-text: #fff;
+}
+
+.theme--outrun {
+    --background: #0b4200;
+    --text: #fc0;
+    --primary: #fc0;
+    --secondary: #0bcc12;
+    --primary-active: #fc0;
+    --primary-active-text: #0f9a00;
+}
+
+.theme--fever {
+    --background: #490016;
+    --text: #fd84b9;
+    --primary: #EA77B0;
+    --primary-active: #FD84B9;
+    --primary-active-text: #fff;
+}
