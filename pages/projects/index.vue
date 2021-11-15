@@ -5,16 +5,21 @@
             Над чем я работал
         </h1>
 
+        <ProjectsSelf :class="$style.self" />
+
         <ProjectList :projects="projects" />
     </div>
 </template>
 <script>
     import ProjectList from '~/components/pages/projects/ProjectList';
+    import ProjectsSelf from '~/components/pages/projects/ProjectsSelf';
+
     export default {
         name: 'ProjectsPage',
 
         components: {
             ProjectList,
+            ProjectsSelf,
         },
 
         data() {
@@ -24,12 +29,19 @@
         },
 
         async fetch() {
+            // Урл нужно сменить на /projects.json при локальной сборке (временно)
             this.projects = await this.$axios.$get('https://front.cat/projects.json');
         },
     };
 </script>
 <style lang="scss" module>
 .ProjectsPage {
-    //
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.self {
+    margin-bottom: 2.8rem;
 }
 </style>

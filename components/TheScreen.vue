@@ -94,11 +94,14 @@
     @include mq(sm) {
         width: 100%;
         height: 100%;
+        max-height: none;
     }
 }
 
 .content {
     overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-active) transparent;
 }
 
 .bottom {

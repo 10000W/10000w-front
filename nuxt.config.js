@@ -7,7 +7,7 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: '10000w',
+        title: '10000W\'s Lair',
         htmlAttrs: {
             lang: 'ru',
         },
@@ -69,10 +69,4 @@ export default {
         // https://go.nuxtjs.dev/axios
         '@nuxtjs/axios',
     ],
-
-    // Axios module configuration: https://go.nuxtjs.dev/config-axios
-    axios: {},
-
-    // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
 };
