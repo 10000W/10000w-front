@@ -19,6 +19,6 @@ $ npm run dev
 $ npm run build
 $ npm run start
 
-# Сгенерировать статический проект
+# Сгенерировать файлы для деплоя
 $ npm run generate
 ```
