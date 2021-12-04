@@ -18,7 +18,7 @@
 
         head() {
             return {
-                title: '10000\'s Lair',
+                title: '10000W\'s Lair',
                 meta: [
                     {
                         hid: 'description',
@@ -28,12 +28,12 @@
                     {
                         hid: 'og:title',
                         property: 'og:title',
-                        content: '10000\'s Lair',
+                        content: '10000W\'s Lair',
                     },
                     {
                         hid: 'og:description',
                         property: 'og:description',
-                        content: '10000\'s Lair – Портфолио фронтенд разработчика',
+                        content: '10000W\'s Lair – Портфолио фронтенд разработчика',
                     },
                     {
                         hid: 'og:image',
@@ -72,6 +72,6 @@
 </script>
 <style lang="scss" module>
 .Default {
-  height: 100vh;
+    height: 100vh;
 }
 </style>

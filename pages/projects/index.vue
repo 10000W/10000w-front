@@ -29,8 +29,7 @@
         },
 
         async fetch() {
-            // Урл нужно сменить на /projects.json при локальной сборке (временно)
-            this.projects = await this.$axios.$get('https://front.cat/projects.json');
+            this.projects = await this.$axios.$get('projects.json');
         },
     };
 </script>

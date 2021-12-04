@@ -13,7 +13,10 @@ export default {
         },
         meta: [
             {charset: 'utf-8'},
-            {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+            {
+                name: 'viewport',
+                content: 'width=device-width, initial-scale=1',
+            },
             {hid: 'description', name: 'description', content: ''},
             {name: 'format-detection', content: 'telephone=no'},
             {name: 'msapplication-TileColor', content: '#000'},
@@ -34,25 +37,29 @@ export default {
                 sizes: '16x16',
                 href: '/favicon-16x16.png',
             },
-            {rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png'},
+            {
+                rel: 'apple-touch-icon',
+                sizes: '180x180',
+                href: '/apple-touch-icon.png',
+            },
             {rel: 'manifest', href: '/site.webmanifest'},
-            {rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#3200f0'},
+            {
+                rel: 'mask-icon',
+                href: '/safari-pinned-tab.svg',
+                color: '#3200f0',
+            },
         ],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: [
-        '@/assets/scss/main.scss',
-    ],
+    css: ['@/assets/scss/main.scss'],
 
     styleResources: {
         scss: ['@/assets/scss/shared.scss'],
     },
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [
-        '@/plugins/directives.js',
-    ],
+    plugins: ['@/plugins/directives.js'],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
@@ -65,7 +72,9 @@ export default {
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [
-        '@nuxtjs/axios',
-    ],
+    modules: ['@nuxtjs/axios'],
+
+    axios: {
+        baseURL: '/',
+    },
 };
