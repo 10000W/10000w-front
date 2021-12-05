@@ -100,12 +100,15 @@ strong {
         white-space: nowrap;
         display: inline;
         line-height: 1;
-        animation: blink .2s steps(2,start) infinite;
+        animation: blink .3s steps(2, jump-none) infinite;
     }
 }
 
 @keyframes blink {
+    0% {
+        opacity: 1;
+    }
     100% {
-        visibility: hidden;
+        opacity: 0;
     }
 }

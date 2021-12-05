@@ -52,13 +52,16 @@
 
     &:after {
         content: "_";
-        animation: blink 1s steps(2, start) infinite
+        animation: blink 1s steps(2, jump-none) infinite
     }
 }
 
 @keyframes blink {
-    to {
-        visibility: hidden
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 </style>
