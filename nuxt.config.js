@@ -77,4 +77,6 @@ export default {
     axios: {
         baseURL: '/',
     },
+
+    loadingIndicator: false,
 };
