@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { computed, useCssModule } from "vue";
-
+import { defineProps, computed, useCssModule } from "vue";
+import type { PropType, ButtonHTMLAttributes } from "vue";
 const styles = useCssModule();
 const props = defineProps({
   type: {
-    type: String,
+    type: String as PropType<ButtonHTMLAttributes["type"]>,
     default: "button",
   },
 
