@@ -1,0 +1,25 @@
+.page-enter-active {
+    animation: blink-out .3s steps(1, end) reverse;
+}
+
+.page-leave-active {
+    animation: blink-out .3s steps(1, end);
+}
+
+@keyframes blink-out {
+    0% {
+        opacity: .6;
+    }
+
+    33% {
+        opacity: .8;
+    }
+
+    66% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
