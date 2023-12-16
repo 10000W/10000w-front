@@ -27,6 +27,6 @@ const themeClass = computed(() => {
 @import "src/assets/scss/main";
 
 main {
-  height: 100vh;
+  height: 100svh;
 }
 </style>

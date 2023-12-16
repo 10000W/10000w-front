@@ -12,9 +12,9 @@ const locale = i18n.locale;
 const { t } = i18n;
 const fetchProjects = async () => {
   try {
-    projects.value = await fetch(`projects-${locale.value || "en"}.json`).then(
-      (res) => res.json()
-    );
+    projects.value = await fetch(
+      `projects-${locale.value === "ru" ? "ru" : "en-US"}.json`
+    ).then((res) => res.json());
   } catch (e) {
     console.warn(e);
   }

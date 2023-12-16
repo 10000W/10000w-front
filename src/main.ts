@@ -13,7 +13,9 @@ import enMessages from "@/locales/en-US.json";
 import ruMessages from "@/locales/ru.json";
 
 const i18n = createI18n({
-  locale: navigator.language,
+  locale: ["en-US", "ru"].includes(navigator.language)
+    ? navigator.language
+    : localStorage.getItem("lang") || "en-US",
   legacy: false,
   fallbackLocale: "en-US",
   messages: {

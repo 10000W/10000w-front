@@ -23,6 +23,7 @@ const toggleLang = () => {
     idx++;
   }
   i18n.locale.value = i18n.availableLocales[idx];
+  localStorage.setItem("lang", i18n.locale.value);
 };
 </script>
 
