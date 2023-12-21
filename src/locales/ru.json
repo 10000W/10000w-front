@@ -5,6 +5,7 @@
     "skills": "Навыки",
     "projects": "Проекты",
     "contacts": "Контакты",
+    "error": "Ошибка",
     "language": "Язык",
     "back": "Назад",
     "theme": "Тема",
@@ -27,5 +28,7 @@
     "contacts.hh": "hh",
     "contacts.habr": "Хабр Карьера",
     "contacts.telegram": "Телеграм",
-    "contacts.email": "Эл. почта"
+    "contacts.email": "Эл. почта",
+    "not-found.title": "404",
+    "not-found.subtitle": "Неповезло"
 }

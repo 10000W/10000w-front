@@ -23,6 +23,11 @@ const router = createRouter({
       name: "skills",
       component: () => import("../views/SkillsView.vue"),
     },
+    {
+      path: "/:pathMatch(.*)",
+      name: "not-found",
+      component: import("../views/NotFoundView.vue"),
+    },
   ],
 });
 

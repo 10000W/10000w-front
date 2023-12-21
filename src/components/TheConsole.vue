@@ -14,6 +14,10 @@ const pathName = computed(() => {
     return t("home");
   }
 
+  if (useRoute().name === "not-found") {
+    return t("error");
+  }
+
   return t(String(useRoute().name));
 });
 </script>

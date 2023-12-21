@@ -6,6 +6,7 @@
     "projects": "Projects",
     "contacts": "Contacts",
     "language": "Language",
+    "error": "Error",
     "back": "Back",
     "theme": "Theme",
     "skills.title": "What I can do",
@@ -27,5 +28,7 @@
     "contacts.hh": "hh",
     "contacts.habr": "Habr Career",
     "contacts.telegram": "Telegram",
-    "contacts.email": "E-mail"
+    "contacts.email": "E-mail",
+    "not-found.title": "404",
+    "not-found.subtitle": "That's unfortunate"
 }
